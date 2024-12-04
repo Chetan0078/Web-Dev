@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set intervel</title>
+</head>
+
+<body>
+    
+    <div style="display: flex; justify-content: center;">
+        <div style="height: 300px; width: 300px; border: 5px solid black;" class="box1"></div>
+        <div style="height: 300px; width: 300px; border: 5px solid black;" class="box2"></div>
+        <div style="height: 300px; width: 300px; border: 5px solid black;" class="box3"></div>
+        <div style="height: 300px; width: 300px; border: 5px solid black;" class="box4"></div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div style="height: 300px; width: 300px; border: 5px solid black;" class="box5"></div>
+        <div style="height: 300px; width: 300px; border: 5px solid black;" class="box6"></div>
+        <div style="height: 300px; width: 300px; border: 5px solid black;" class="box7"></div>
+        <div style="height: 300px; width: 300px; border: 5px solid black;" class="box8"></div>
+    </div>
+
+
+    <script>
+        function color() {
+            let color1 = Math.floor(Math.random() * 255);
+            let color2 = Math.floor(Math.random() * 255);
+            let color3 = Math.floor(Math.random() * 255);
+            return `rgb(${color1}, ${color2},${color3})`;
+        }
+        setInterval(() => {
+            document.querySelector(".box1").style.backgroundColor = color();
+            document.querySelector(".box2").style.backgroundColor = color();
+            document.querySelector(".box3").style.backgroundColor = color();
+            document.querySelector(".box4").style.backgroundColor = color();
+            document.querySelector(".box5").style.backgroundColor = color();
+            document.querySelector(".box6").style.backgroundColor = color();
+            document.querySelector(".box7").style.backgroundColor = color();
+            document.querySelector(".box8").style.backgroundColor = color();
+        }, 100);
+    </script>
+</body>
+
+</html>

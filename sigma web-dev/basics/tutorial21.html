@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="stylesheet" href="all.css">
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    border: 6px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.box:hover {
+    border: 5px solid black;
+    scale: 1.1;
+}
+
+.box {
+    height: 250px;
+    width: 200px;
+    border: 2px solid rgb(212, 212, 224);
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    transition: .50s all ease-in;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h2{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.amg{
+    height: 210px;
+    width: 180px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+}
+.amg:hover{
+    filter: grayscale(0%);
+}
+
+@keyframes spinAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#spinner {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    top: 500px;
+    left: 300px;
+    border-radius: 50%;
+    border: 8px solid gray;
+    border-top-color: rgb(255, 255, 255);
+    animation: spinAnimate 1s linear infinite;
+}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box" id="box1">
+            <h2>New Arrival</h2>
+            <img src="amg1.jpg" alt="" class="amg">
+        </div>
+        <div class="box" id="box2">
+            <h2>Mobile Accesorries</h2>
+            <img src="amg2.jpg" alt="" class="amg">
+        </div>
+        <div class="box" id="box3">
+            <h2>Fashion</h2>
+            <img src="amg3.jpg" alt="" class="amg">
+        </div>
+        <div class="box" id="box4">
+            <h2>Beauti Products</h2>
+            <img src="amg4.jpg" alt="" class="amg">
+        </div>
+        <div class="box" id="box5">
+            <h2>Gaming on the Way</h2>
+            <img src="amg5.jpg" alt="" class="amg">
+        </div>
+        <div class="box" id="box6">
+            <h2>Featurs</h2>
+            <img src="amg6.jpg" alt="" class="amg">
+        </div>
+        <div class="box" id="box7">
+            <h2>Flagships</h2>
+            <img src="amg7.jpg" alt="" class="amg">
+        </div>
+        <div class="box" id="box8">
+            <h2>Trandings</h2>
+            <img src="amg8.jpg" alt="" class="amg">
+        </div>
+    </div>
+    <div id="spinner"></div>
+</body>
+
+</html>

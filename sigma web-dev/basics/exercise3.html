@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container {
+            height: 700px;
+            width: 500px;
+            align-items: center;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 500px;
+            top: 32px;
+            background-color: #F4E7FB;
+            border-radius: 15px;
+            transition: .5s ease-in ;
+        }
+        .container:hover{
+            scale: 1.05;
+        }
+
+        .content {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            /* flex-direction: row; */
+            display: inline;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            width: 440px;
+            height: 660px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px 0px;
+        }
+
+        .image {
+            height: 300px;
+            width: 400px;
+            /* border: 6px solid black; */
+            border-radius: 10px;
+            object-fit: cover;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        button{
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px 6px 1px rgb(0, 0, 0);
+            font-size: 15px;
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 4px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 20px;
+        }
+        p{
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 20px;
+        }
+        .read{
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0px 0px 6px 1px rgb(0, 0, 0);
+            font-size: 15px;
+            font-weight: 800;
+            background-color: rgb(178, 178, 243);
+            color: rgb(7, 19, 70);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 4px;
+            margin-left: 20px;
+            align-self: center;
+            padding: 10px;
+            animation: 2s ease-out infinite;
+        }
+        .border:hover{
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="https://images.pexels.com/photos/4510992/pexels-photo-4510992.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="" class="image">
+            <div class="btn">
+                <button class="border">Nature</button>
+                <button class="border">Lake</button>
+            </div>
+            <div class="txt">
+                <h2>Lago di Braies</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maiores dolore asperiores perferendis, eos enim at, possimus eum natus error consectetur voluptatum magnam non harum voluptatibus necessitatibus nesciunt assumenda beatae atque!</p></div>
+            <button class="read border">Read more</button>
+        </div>
+    </div>
+</body>
+
+</html>

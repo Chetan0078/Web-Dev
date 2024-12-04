@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to GlobeCart</h1>
+    <div id="container">
+        <form action="" name="regform" onsubmit="return validateForm()">
+            <table>
+                <tr>
+                    <td class="row" >Full Name</td>
+                    <td><input type="text" name="name" placeholder="Enter Name"></td>
+                </tr>
+                <tr>
+                    <td class="row" >Email</td>
+                    <td><input type="email" name="email" placeholder="Enter you email"></td>
+                </tr>
+                <tr>
+                    <td class="row" >Password</td>
+                    <td><input type="password" name="password" placeholder="password"></td>
+                </tr>
+                <tr>
+                    <td class="row" >Confrim Password</td>
+                    <td><input type="password" name="confrimpassword" placeholder="password"></td>
+                </tr>
+
+            </table>
+            <button id="signup" style="padding: 5px 10px; border-radius: 8px; text-decoration: none;  ">sign-up</button>
+        </form>
+        <div id="signin">
+            <p>Already Registerd? Sign in here</p>
+            <!-- <button id="signinbtn"><link rel="stylesheet" href="http://127.0.0.1:5501/crt%202/day5/signin.html"> signin</button> -->
+            <a href="signin.html" title="sigh-in">sign-in</a>
+        </div>
+    </div>
+    <button id="dark">
+        <img src="https://cdn-icons-png.flaticon.com/128/6077/6077108.png" alt="">
+    </button> 
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sigma Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: rgb(186, 159, 128);
+            height: 80px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 75px;
+            mix-blend-mode: color-burn;
+        }
+        .nav-items{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        i{
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <div class="nav-items">
+                <img src="https://th.bing.com/th/id/OIP.1dflhRyK3Zk5BTHeUB6AgwHaFU?w=323&h=188&c=7&r=0&o=5&dpr=1.2&pid=1.7"
+                    alt="" class="logo">
+            </div>
+            <div class="nav-items">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+            <div class="nav-items" id="buttons">
+                <ul><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Log-in</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

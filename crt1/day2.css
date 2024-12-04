@@ -1,0 +1,118 @@
+#lol{
+    color: brown;
+    background-color: antiquewhite;
+    font-size: large;}
+
+button{
+    color: black;
+    background-color: blue;
+}
+select{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 238);
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #ff0000;
+    }
+    50% {
+        background-color: #00ff00;
+    }
+    100% {
+        background-color: #0000ff;
+    }
+}
+.animated-div {
+    text-align: justify;
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    margin: 50px;
+    animation: rotate 4s infinite, changeColor 2s infinite alternate;
+}
+#list{
+    font-size: 50px;
+    padding: 50px;
+    border: red double ;
+    text-align: center;
+}
+.container{
+    background-color: burlywood; 
+    padding-left: 670px;
+    color: rgb(255, 0, 0);
+    list-style: georgian;
+    
+}
+li{
+    list-style: none;
+}
+#bmw {
+    color: #0000ff;
+    height: 20px;
+}
+#lamborgini {
+color: #ff5100;
+height: 20px;
+
+}
+#bugatti {
+    color: black;
+    height: 20px;
+}
+#pagani {
+    color: brown;
+    height: 20px;
+}
+#mustang {
+    color: crimson;
+    height: 20px;
+}
+div{
+    border: black solid;
+}
+
+#div1{
+    background-color: aqua;
+    height: 150px;
+    max-width: 100%;
+    overflow: auto;
+    opacity: 1;
+}
+#div2{
+    background-color: rgb(229, 229, 6);
+    height: 150px;
+    overflow: auto;
+    max-width: 100%;
+}
+#div3{
+    background-color: rgb(58, 53, 25);
+    height: 80px;
+    max-width: 100%;
+}
+#div4{
+    background-color: chartreuse;
+    height: 80px;
+    max-width: 100%;
+}
+#div5{
+    background-color: #ff0000;
+    height: 80px;
+    max-width: 100%;
+}
+p{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 39px ;
+    font-style: italic;
+    opacity: 0.4;
+    /* display: inline-flex; */
+}

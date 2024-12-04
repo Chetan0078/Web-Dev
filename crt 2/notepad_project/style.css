@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #5A639C;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #FF6969;
+    box-shadow: 0 0 20px rgba(50, 50, 50, 0.8);
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #292929;
+}
+
+
+.note-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#note-text {
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#add-note {
+    padding: 10px 20px;
+    border: none;
+    background-color: #C80036;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#add-note:hover {
+    background-color: #FF6969;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.note {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note p {
+    margin: 0;
+    flex: 1;
+    padding-right: 10px;
+    object-fit: contain;
+}
+
+.note-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.note-buttons button {
+    margin-left: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.pin {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.edit {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.pin:hover {
+    background-color: #7a5c00;
+}
+
+.edit:hover {
+    background-color: #0b6573;
+}
+
+.delete:hover {
+    background-color: #841a25;
+}

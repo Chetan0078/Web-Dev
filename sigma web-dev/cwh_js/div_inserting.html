@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Remove Div</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #container button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #container button:hover {
+            background-color: #0056b3;
+        }
+
+        .dynamic-div {
+            width: 200px;
+            height: 100px;
+            background-color: #ffc107;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <button id="addBtn">Add Div</button>
+        <button id="removeBtn">Remove Div</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById('container');
+            const addBtn = document.getElementById('addBtn');
+            const removeBtn = document.getElementById('removeBtn');
+
+            addBtn.addEventListener('click', () => {
+                const newDiv = document.createElement('div');
+                newDiv.classList.add('dynamic-div');
+                newDiv.textContent = 'I am a new div!';
+                container.appendChild(newDiv);
+            });
+
+            removeBtn.addEventListener('click', () => {
+                const dynamicDivs = document.querySelectorAll('.dynamic-div');
+                if (dynamicDivs.length > 0) {
+                    container.removeChild(dynamicDivs[dynamicDivs.length - 1]);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

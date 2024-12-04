@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOL</title>
+    <script src="day4.js"></script>
+</head>
+
+<body>
+    <!-- <div>
+        <p id="specs" style="font-size: 30px;"></p>
+        <button type="button" onclick="sum1()">Enter your name</button>
+    </div>
+    <div>
+        <p id="demo" style="font-size: 30px;" ></p>
+        <button type="button" onclick="document.getElementById('specs').innerHTML='My Chetan'">Click</button>
+    </div>
+
+
+
+
+    <script> 
+        // let str = "          poornima college          ";
+        // console.log(str.substring(10, 15));
+        // //variable is global / fuctional scope and it is scanned before its use and make available as undefined.
+
+
+        // //FUNCTION
+
+        // function greeting(Batman) {
+        //     console.log("Hi! My name is :", Batman);
+        // }
+        // greeting("Chetan");
+        // greeting("Aakash");
+
+        // const sum = function (a, b) {
+        //     return a + b;
+        // }
+        // console.log(sum(5, 6));
+        // const ss= "Chetan";
+        // console.log(ss.indexOf("t"));
+
+        const sum1 = () => {
+            let name;
+            name = prompt("What is your name?");
+            return name;
+        }
+        console.log(sum1());
+        
+        document.getElementById("demo").innerHTML=sum();
+        const getLastName = () =>{
+            return document.getElementById("demo").innerHTML="Poornima"}
+
+    </script> -->
+    <!-- <div>
+        <p id="firstDemo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo officia sequi praesentium blanditiis est, nihil similique quae pariatur facilis possimus necessitatibus. Totam a ipsa dolor amet ullam consequatur officia iure sed in ipsum ea aspernatur saepe earum, repellendus fugiat quas, ad, ducimus exercitationem porro ut iste voluptatibus velit culpa! Eveniet.</p>
+        <button onClick="getfuntionName()">Click</button>
+    </div> -->
+    <script>
+        let age;
+        age = 25;
+        if (age >= 18) {
+            console.log("You can vote!");
+        }
+        else {
+            console.log("You can't vote!");
+        }
+        const User = [{
+            id: 1,
+            name: "Amit",
+            sub: "English"
+        }, {
+            id: 2,
+            name: "Chetan",
+            sub: "insta"
+
+        }, {
+            id: 3,
+            name: "harshit",
+            sub: "science"
+
+        }, {
+            id: 4,
+            name: "vishal",
+            sub: "lol"
+        }]
+        User.map((element) => {
+            return console.log(element.id);
+        })
+        User.map((element) => {
+            return console.log(element.name);
+        })
+        User.map((element) => {
+            return console.log(element.sub);
+        })
+        let a, b;
+        a = 4, b = 9;
+        console.log("a<b && a!=4 is:", a < b && a != 4);
+        console.log("a<b && a==4 is:", a < b || a == 4);
+        if ((a > 3) && (b < 11)) {
+            console.log("The condition is true");
+        }
+        else {
+            console.log("The condition is false");
+        }
+
+    </script>
+</body>
+
+</html>

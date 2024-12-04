@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #111010;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation: move 4s infinite alternate-reverse;
+}
+.boxe {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation: move2 4s infinite alternate-reverse;
+}
+@keyframes move {
+    from {
+        right: 0;
+        rotate: 0deg;
+    }
+    to {
+        right: 400px;
+        rotate: 180deg;
+    }
+}
+@keyframes move2 {
+    from {
+        left: 0;
+        rotate: 0deg;
+    }
+    to {
+        left: 400px;
+        rotate: 180deg;
+    }
+}

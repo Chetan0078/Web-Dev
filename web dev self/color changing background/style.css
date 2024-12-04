@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    padding: 40px 90px;
+    background-color: rgb(175, 175, 59);
+    text-decoration: none;
+    border-radius: 12px;
+    border-style: none;
+    box-shadow: 10px 10px 10px white;
+}
