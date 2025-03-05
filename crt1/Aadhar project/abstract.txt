@@ -1,0 +1,12 @@
+Database Structure:
+Users Table: Stores customer information, including name, email, password, address, and phone number.
+Categories Table: Manages product categories to organize items efficiently.
+Products Table: Holds product details such as name, description, price, stock quantity, category reference, and image URL.
+Orders Table: Keeps track of customer orders, including total price, order status, and order date.
+Order Items Table: Records items within an order, linking each order with multiple products, along with their quantity and price.
+Payments Table: Handles transaction records, storing payment details, amount, status, method, and timestamp.
+Key Features:
+✅ Efficient Data Organization – Tables are normalized to reduce redundancy.
+✅ Foreign Key Constraints – Ensures relational integrity between tables.
+✅ Order & Payment Tracking – Provides real-time tracking of order status and payment transactions.
+✅ Scalability – Designed for future enhancements like discounts, wishlists, and reviews.
