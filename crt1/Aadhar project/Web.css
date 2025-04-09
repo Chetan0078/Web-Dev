@@ -118,7 +118,9 @@ ul li i:hover{
 .crdText i{
     color: rgb(255, 149, 0);
 }
-
+#search{
+    padding-left: 10px;
+}
 .blog{
     display: flex;
     justify-content: center;
@@ -127,7 +129,7 @@ ul li i:hover{
     background-color: #fff;
     margin-inline: 22px;
     border-radius: 11px;
-   
+    transition: 0.3s ease-in-out;
 }
 .blog:hover{
     transition: 0.6s ease;
