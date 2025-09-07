@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College login form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="head">
+        <img src="/pcelogo.png" alt="">
+        <h2>Hello! and welcome back to PCE</h2>
+        <h3>sign in here</h3>
+        <div>
+            <p>select your batch</p>
+            <select name="batch" id="120">
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+        </div>
+    </header>
+
+
+    <main>
+        <form action="/collegeform.php">
+            <br><br><br><br>
+            Enter you username here
+            <input type="text" placeholder="Enter you username">
+            <br>
+            Enter your password here
+            <input type="password" placeholder="password">
+            <br>
+            Enter your batch info...
+            <label for="121">
+                <input type="radio" id="121" value="lateral" name="lateral">lateral
+            </label>
+            <label for="122">
+                <input type="radio" id="122" value="by" name="lateral">by
+            </label>
+            <label for="123">
+                <input type="radio" id="123" value="normal" name="lateral">normal
+            </label>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+
+    </main>
+
+
+    <footer>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
